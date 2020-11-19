@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZdM5uuiXR6m-uJpDe5steAASMbp4sGuM"></script>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -26,6 +27,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <title>council_portal</title>
   <link rel="manifest" href="manifest.json">
 </head>
@@ -36,10 +40,11 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3179641400');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=156799630');
       });
     }
   </script>
+  
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
