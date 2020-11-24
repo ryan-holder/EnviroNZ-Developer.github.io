@@ -3,12 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "263673548844903683e62512b680b32f",
-"assets/assets/bin.png": "6e45495e1a3810acc0f888bf52df4608",
-"assets/assets/blank_ratepayer_form.jpg": "f3a3002d2765c83485f9ffdcaaa30496",
+  "assets/AssetManifest.json": "69b37400fde456af1748a60a07d3367f",
+"assets/assets/bin.png": "3095bdc76bd669edd68cddeae58eae18",
+"assets/assets/blank_ratepayer_form.jpg": "5682e275095496de3fc77c657a2ac006",
+"assets/assets/circle.png": "a12c4ed9458ac817fb1a22f7c7d8824f",
 "assets/assets/clouds.jpg": "ee53739cb72747c0e9f8d3cb47117aba",
 "assets/assets/envirowaste.png": "4645398e392b7f3b82839b07e5a4efaa",
-"assets/assets/TCC.jpg": "117d8aceceb0296607d450090b854510",
+"assets/assets/TCC.jpg": "2fe44eaab91873ea768c99cb8f8ca27b",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/Lato-Black.ttf": "e631d2735799aa943d93d301abf423d2",
 "assets/fonts/Lato-BlackItalic.ttf": "2e26a9163cb4974dcba1bea5107d4492",
@@ -36,9 +37,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "7c64afe0749c1405159b141ad4ea7b57",
-"/": "7c64afe0749c1405159b141ad4ea7b57",
-"main.dart.js": "27260a007fbd48c9e3d5ccf98ca00bb2",
+"index.html": "85f222d3df013ede8deff614884ce53a",
+"/": "85f222d3df013ede8deff614884ce53a",
+"main.dart.js": "293f5aba5b6e1e27c633be2ee0c9cc93",
 "manifest.json": "029af54272fbe410cb660f03da1ae027",
 "version.json": "2bac15195b42a0c3ccd64dd563fe9918"
 };
