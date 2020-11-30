@@ -9,5 +9,10 @@
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
+        {
+            "src": "icons/leaf.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
     ]
 }
