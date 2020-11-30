@@ -1,0 +1,82 @@
+openapi: 3.0.1
+info:
+  title: EnviroNZ-API
+  description: Import from "EnviroNZ-API" Function App
+  version: "1.0"
+servers:
+  - url: https://environz-api.azurewebsites.net/api
+paths:
+  # "/TCC/UpdateCustomer/{id}":
+  #   post:
+  #     summary: UpdateCustomer
+  #     operationId: post-updatecustomer
+  #     parameters:
+  #       - name: id
+  #         in: path
+  #         required: true
+  #         schema:
+  #           type: "integer"
+  #     responses:
+  #       "200":
+  #         description: ""
+  /Status:
+    get:
+      summary: Status
+      operationId: get-status
+      tags:
+        - Status
+      responses:
+        "200":
+          description: ""
+  # /FuncGetStatusCodes:
+  #   get:
+  #     summary: FuncGetStatusCodes
+  #     operationId: get-funcgetstatuscodes
+  #     responses:
+  #       "200":
+  #         description: ""
+  "/TCC/GetCustomer/{id}":
+    get:
+      summary: GetCustomer
+      operationId: get-getcustomer
+      tags:
+        - TCC - Customers
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: "integer"
+      responses:
+        "200":
+          description: ""
+  # /TCC/GetCustomers:
+  #   get:
+  #     summary: GetCustomers
+  #     operationId: get-getcustomers
+  #     responses:
+  #       "200":
+  #         description: ""
+  "/TCC/GetAllCustomerAddresses/{id}":
+    get:
+      summary: GetAllCustomerAddresses
+      operationId: get-getallcustomeraddresses
+      tags:
+        - TCC - Customers
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: "integer"
+      responses:
+        "200":
+          description: ""
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: x-functions-key
+      in: header
+security:
+  - apiKeyHeader: []
