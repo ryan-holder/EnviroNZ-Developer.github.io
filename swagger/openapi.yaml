@@ -45,6 +45,13 @@ paths:
         - name: id
           in: path
           required: true
+          description: Customer Code
+          schema:
+            type: "integer"
+        - name: assessmentNumber
+          in: query
+          required: true
+          description: Assessment Number
           schema:
             type: "integer"
       responses:
