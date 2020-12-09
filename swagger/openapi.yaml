@@ -53,7 +53,7 @@ paths:
           required: true
           description: Assessment Number
           schema:
-            type: "integer"
+            type: "string"
       responses:
         "200":
           description: ""
