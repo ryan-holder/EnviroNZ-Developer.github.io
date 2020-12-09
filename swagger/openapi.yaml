@@ -57,21 +57,21 @@ paths:
   #     responses:
   #       "200":
   #         description: ""
-  "/TCC/GetAllCustomerAddresses/{id}":
-    get:
-      summary: GetAllCustomerAddresses
-      operationId: get-getallcustomeraddresses
-      tags:
-        - TCC - Customers
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: "integer"
-      responses:
-        "200":
-          description: ""
+  # "/TCC/GetAllCustomerAddresses/{id}":
+  #   get:
+  #     summary: GetAllCustomerAddresses
+  #     operationId: get-getallcustomeraddresses
+  #     tags:
+  #       - TCC - Customers
+  #     parameters:
+  #       - name: id
+  #         in: path
+  #         required: true
+  #         schema:
+  #           type: "integer"
+  #     responses:
+  #       "200":
+  #         description: ""
 components:
   securitySchemes:
     apiKeyHeader:
