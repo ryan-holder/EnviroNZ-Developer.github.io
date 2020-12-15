@@ -39,7 +39,7 @@ const RESOURCES = {
 "index.html": "861cdf8e6bb6724720889264264e7728",
 "/": "861cdf8e6bb6724720889264264e7728",
 "leaf.png": "4ffacdcca2481573c09930dc6be5cea6",
-"main.dart.js": "180d528e99150f5742be1c69f80d8d67",
+"main.dart.js": "51cb2f3b6d0907d688324c41fb0aefeb",
 "manifest.json": "adc25949bf0f463fe04548cacc80513c",
 "version.json": "2bac15195b42a0c3ccd64dd563fe9918"
 };
