@@ -33,13 +33,22 @@ const RESOURCES = {
 "assets/fonts/RobotoSlab-Regular.ttf": "2e935203e7200edebf345ee19a80f435",
 "assets/fonts/RobotoSlab-SemiBold.ttf": "c0c8f9633f1894907dcbbfd4fc9b5f6e",
 "assets/fonts/RobotoSlab-Thin.ttf": "843f16adb42efdf586c236384ea53d9b",
+<<<<<<< Updated upstream
 "assets/NOTICES": "8aba5e262ec3d0049ea9bcfed89541a9",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
+=======
+"assets/NOTICES": "b228bd5127d57d9ff05e28621a5bf645",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+>>>>>>> Stashed changes
 "icons/leaf.png": "4ffacdcca2481573c09930dc6be5cea6",
 "index.html": "861cdf8e6bb6724720889264264e7728",
 "/": "861cdf8e6bb6724720889264264e7728",
 "leaf.png": "4ffacdcca2481573c09930dc6be5cea6",
+<<<<<<< Updated upstream
 "main.dart.js": "9ff56aee0e29e5c83719c9385901e450",
+=======
+"main.dart.js": "ede059f1305c7cb7d1012672acf3415a",
+>>>>>>> Stashed changes
 "manifest.json": "adc25949bf0f463fe04548cacc80513c",
 "version.json": "2bac15195b42a0c3ccd64dd563fe9918"
 };
