@@ -33377,7 +33377,7 @@ $S:281}
 E.rt.prototype={
 L:function(a,b){var s=null,r=t.w,q=b.A(r).f,p=b.A(r).f.a.a
 r=b.A(r).f.a.a>=1500?new V.R(p*0.075,0,0,0):new V.R(p*0.05,0,0,0)
-return M.aW(s,T.kn(H.c([U.a8A("logo.png",s,q.a.b*0.1),new T.b8(C.yu,L.aI("Version: 0.2.0.1",s,s,s,A.pc(s,s,s,s,s,s,s,s,s,s,s,10,s,s,s,s,!0,s,s,s,s,s,s),s),s)],t.X),C.T,C.iS,C.t),C.j,s,s,s,s,r,s)}}
+return M.aW(s,T.kn(H.c([U.a8A("logo.png",s,q.a.b*0.1),new T.b8(C.yu,L.aI("Version: 0.2.0.2",s,s,s,A.pc(s,s,s,s,s,s,s,s,s,s,s,10,s,s,s,s,!0,s,s,s,s,s,s),s),s)],t.X),C.T,C.iS,C.t),C.j,s,s,s,s,r,s)}}
 Z.rk.prototype={
 L:function(a,b){var s,r,q,p,o,n=null,m=t.w,l=b.A(m).f,k=this.d===C.qW,j=k?"You\u2019ll receive the garden waste collection service from July 2021.\n\nYou will receive your new garden waste bin when your new rubbish, recycling and food scraps bins are delivered to your kerbside between March and May 2021. You can check our website from March 2021 for timeframes the new bins will be delivered to households in your suburb.\n\nAs you would have read in the terms and conditions, you will pay for the service through your property\u2019s rates invoice from 2021/22 onwards. If you would like to receive general updates about the kerbside collections services please enter your email address below.":"Something went wrong. Please try again later or contact EnviroNZ using the buttons below."
 if(b.A(m).f.a.a>=1500)s=$.aib()
@@ -33405,7 +33405,7 @@ j=V.a8U(new Q.cD("Garden Waste Terms and Conditions",q,i,j),C.cS)
 i=b.A(n).f.a.a>=1500?$.a7V():$.a7U()
 s=N.vK(q)
 s.t=new X.Og()
-i=V.a8U(new Q.cD("Online Terms and Conditions",q,s,i),C.cS)
+i=V.a8U(new Q.cD("Website Terms of Use",q,s,i),C.cS)
 s=b.A(n).f.a.a>=1500?$.a7V():$.a7U()
 r=N.vK(q)
 r.t=new X.Oh()
