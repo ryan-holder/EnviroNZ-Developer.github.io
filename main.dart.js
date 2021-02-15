@@ -37416,7 +37416,7 @@ ig:function(a){return this.abP(a)},
 abP:function(a){var s=0,r=P.a6(t.Q),q,p,o,n
 var $async$ig=P.a2(function(b,c){if(b===1)return P.a3(c,r)
 while(true)switch(s){case 0:p=t.Q
-o=P.ax(["env","prod"],p,p)
+o=P.ax(["env","dev1"],p,p)
 s=3
 return P.a0(G.aAo(P.al7("https","environz-api.azurewebsites.net","/api/TCC/UpdateCustomer/"+H.c(a.a),o),C.aV.LO(a,null),P.ax(["Content-Type","application/json","x-functions-key","9MXOoNR3KUIpXJTCcPbtfjUlrnsJztz4crTmBMKqvveyLBUpdmqGQg=="],p,p)),$async$ig)
 case 3:n=c
