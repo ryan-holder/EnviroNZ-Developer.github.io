@@ -33,13 +33,13 @@ const RESOURCES = {
 "assets/fonts/RobotoSlab-Regular.ttf": "2e935203e7200edebf345ee19a80f435",
 "assets/fonts/RobotoSlab-SemiBold.ttf": "c0c8f9633f1894907dcbbfd4fc9b5f6e",
 "assets/fonts/RobotoSlab-Thin.ttf": "843f16adb42efdf586c236384ea53d9b",
-"assets/NOTICES": "adc0605b742c544fe92021ccfcd9486a",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/NOTICES": "1352f8e119cb2bcc6a54b827418306ec",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
 "icons/leaf.png": "4ffacdcca2481573c09930dc6be5cea6",
 "index.html": "861cdf8e6bb6724720889264264e7728",
 "/": "861cdf8e6bb6724720889264264e7728",
 "leaf.png": "4ffacdcca2481573c09930dc6be5cea6",
-"main.dart.js": "98728f74a66a2c9b2f6d94c4c582f1e0",
+"main.dart.js": "23e50872d271781cdc637b757d40d201",
 "manifest.json": "adc25949bf0f463fe04548cacc80513c",
 "version.json": "2bac15195b42a0c3ccd64dd563fe9918"
 };
@@ -59,7 +59,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
