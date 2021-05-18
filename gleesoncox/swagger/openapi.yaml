@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  title: EnviroNZ-API
+  description: EnviroNZ-API API for Gleeson & Cox
+  version: "1.0"
+servers:
+  - url: https://environz-api-dev.azurewebsites.net/api
+paths:
+  /Status:
+    get:
+      summary: Status
+      operationId: get-status
+      tags:
+        - Status
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+        
+  /weighbridge/gleesoncox/sendweighingdata:
+    post:
+      tags:
+        - Weighbridge
+      summary: Send Weighing Data
+      operationId: post-sendweighingdata
+      requestBody:
+        description: Gleeson & Cox Weighing Data for EnviroFill South
+        content:
+          application/json: 
+            schema:
+              $ref: "#/components/schemas/WeighingData"
+        required: true
+      responses:
+        "200":
+          description: "Success"
+        "400":
+          description: "Bad Request"
+        "401":
+          description: "Unauthorized Error"
+        "404":
+          description: "Not Found Error"
+        "500":
+          description: "Internal Server Error"
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: x-functions-key
+      in: header
+  schemas:
+    WeighingData:
+      type: object
+      properties:
+        VehicleRegistration:
+          type: string
+        GrossWeight:
+          type: number
+          format: double
+        TareWeight:
+          type: number
+          format: double
+        TimeIn:
+          type: string
+        TimeOut:
+          type: string
+        WeighingslipText:
+          type: string
+        ExternalPoNumber:
+          type: string
+security:
+  - apiKeyHeader: []
+  
