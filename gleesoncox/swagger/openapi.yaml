@@ -31,7 +31,9 @@ paths:
         content:
           application/json: 
             schema:
-              $ref: "#/components/schemas/WeighingData"
+              type: array
+              items:
+                $ref: "#/components/schemas/WeighingData"
         required: true
       responses:
         "200":
