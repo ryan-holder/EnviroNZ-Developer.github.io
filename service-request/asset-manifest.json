@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ab436bed.chunk.css",
+    "main.js": "/static/js/main.e49b5651.chunk.js",
+    "main.js.map": "/static/js/main.e49b5651.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3a4e85b7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3a4e85b7.js.map",
+    "static/js/2.b8c26d5c.chunk.js": "/static/js/2.b8c26d5c.chunk.js",
+    "static/js/2.b8c26d5c.chunk.js.map": "/static/js/2.b8c26d5c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ab436bed.chunk.css.map": "/static/css/main.ab436bed.chunk.css.map",
+    "static/js/2.b8c26d5c.chunk.js.LICENSE.txt": "/static/js/2.b8c26d5c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/tcc-background-min.6e2483db.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a4e85b7.js",
+    "static/js/2.b8c26d5c.chunk.js",
+    "static/css/main.ab436bed.chunk.css",
+    "static/js/main.e49b5651.chunk.js"
+  ]
+}
