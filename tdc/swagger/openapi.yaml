@@ -1,0 +1,118 @@
+openapi: 3.0.1
+info:
+  title: EnviroNZ-API
+  description: EnviroNZ API for Timaru District Council
+  version: "1.0"
+servers:
+  - url: https://environz-api-dev.azurewebsites.net/api
+paths:
+  /Status:
+    get:
+      summary: Status
+      operationId: get-status
+      tags:
+        - Status
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+  /tdc/servicerequesttypes:
+    get:
+      summary: Returns the list of service request types
+      operationId: get-servicerequesttypes
+      tags:
+        - Service Request
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+  /tdc/servicetypes:
+    get:
+      summary: Returns the list of service types
+      operationId: get-servicetypes
+      tags:
+        - Service Request
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+  /tdc/servicerequest:
+    get:
+      summary: Returns the list of service types based on filters. Leave filters blank to return all records
+      operationId: get-allservicerequests
+      tags:
+        - Service Request
+      parameters:
+        - name: customerCode
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: tdcReference
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+    post:
+      tags:
+        - Service Request
+      summary: Send service request data
+      operationId: post-servicerequest
+      requestBody:
+        description: TDC service request data for EnviroWaste
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ServiceRequest"
+        required: true
+      responses:
+        "200":
+          description: "Success"
+        "400":
+          description: "Bad Request"
+        "401":
+          description: "Unauthorized Error"
+        "404":
+          description: "Not Found Error"
+        "500":
+          description: "Internal Server Error"
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: x-functions-key
+      in: header
+  schemas:
+    ServiceRequest:
+      type: object
+      properties:
+        CustomerId:
+          type: string
+        TDCReference:
+          type: string
+        ServiceRequestType:
+          type: string
+        ServiceType:
+          type: string
+        Comments:
+          type: string
+        Attachment:
+          type: string
+security:
+  - apiKeyHeader: []
