@@ -5,7 +5,6 @@ info:
   version: "1.0"
 servers:
   - url: https://environz-api-dev.azurewebsites.net/api
-  - url: http://localhost:7071/api
 paths:
   /Status:
     get:
@@ -46,31 +45,23 @@ paths:
           description: "Unauthorised"
         "404":
           description: "Not Found"
-  /wbop/servicerequest/{id}:
-    get:
-      summary: Returns a specific service request
-      operationId: get-servicerequestid
-      tags:
-        - Service Request
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: "Success"
-        "401":
-          description: "Unauthorised"
-        "404":
-          description: "Not Found"
   /wbop/servicerequest:
     get:
-      summary: Returns the full list of service types
+      summary: Returns the list of service types based on filters. Leave filters blank to return all records
       operationId: get-allservicerequests
       tags:
         - Service Request
+      parameters:
+        - name: customerCode
+          in: query
+          required: false
+          schema:
+            type: number
+        - name: wbopReference
+          in: query
+          required: false
+          schema:
+            type: string
       responses:
         "200":
           description: "Success"
