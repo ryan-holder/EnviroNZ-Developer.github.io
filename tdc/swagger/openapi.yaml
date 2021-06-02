@@ -52,7 +52,7 @@ paths:
       tags:
         - Service Request
       parameters:
-        - name: customerCode
+        - name: customerId
           in: query
           required: false
           schema:
