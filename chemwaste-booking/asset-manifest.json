@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/chemwaste-booking/static/css/main.878ed048.chunk.css",
+    "main.js": "/chemwaste-booking/static/js/main.89763fb3.chunk.js",
+    "main.js.map": "/chemwaste-booking/static/js/main.89763fb3.chunk.js.map",
+    "runtime-main.js": "/chemwaste-booking/static/js/runtime-main.725fbca4.js",
+    "runtime-main.js.map": "/chemwaste-booking/static/js/runtime-main.725fbca4.js.map",
+    "static/js/2.2661ed05.chunk.js": "/chemwaste-booking/static/js/2.2661ed05.chunk.js",
+    "static/js/2.2661ed05.chunk.js.map": "/chemwaste-booking/static/js/2.2661ed05.chunk.js.map",
+    "index.html": "/chemwaste-booking/index.html",
+    "static/css/main.878ed048.chunk.css.map": "/chemwaste-booking/static/css/main.878ed048.chunk.css.map",
+    "static/js/2.2661ed05.chunk.js.LICENSE.txt": "/chemwaste-booking/static/js/2.2661ed05.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/chemwaste-booking/static/media/hamilton-background.e80b7535.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.725fbca4.js",
+    "static/js/2.2661ed05.chunk.js",
+    "static/css/main.878ed048.chunk.css",
+    "static/js/main.89763fb3.chunk.js"
+  ]
+}
