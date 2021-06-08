@@ -49,22 +49,5 @@ components:
       type: apiKey
       name: x-functions-key
       in: header
-  schemas:
-    ServiceRequest:
-      type: object
-      properties:
-        CustomerCode:
-          type: number
-          format: integer
-        WBOPReference:
-          type: string
-        ServiceRequestType:
-          type: string
-        ServiceType:
-          type: string
-        Comments:
-          type: string
-        Attachment:
-          type: string
 security:
   - apiKeyHeader: []
