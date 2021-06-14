@@ -79,7 +79,37 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/ServiceRequest"
+              $ref: "#/components/schemas/CreateServiceRequest"
+        required: true
+      responses:
+        "200":
+          description: "Success"
+        "400":
+          description: "Bad Request"
+        "401":
+          description: "Unauthorized Error"
+        "404":
+          description: "Not Found Error"
+        "500":
+          description: "Internal Server Error"
+    put:
+      tags:
+        - Service Request
+      summary: "Update an existing service request"
+      description: "Add additional comments to an already submitted service request"
+      operationId: "put-servicerequest"
+      parameters:
+        - in: "query"
+          name: "wbopReference"
+          description: "WBOP Reference Code to be updated"
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateServiceRequest"
         required: true
       responses:
         "200":
@@ -99,7 +129,7 @@ components:
       name: x-functions-key
       in: header
   schemas:
-    ServiceRequest:
+    CreateServiceRequest:
       type: object
       properties:
         CustomerCode:
@@ -114,6 +144,11 @@ components:
         Comments:
           type: string
         Attachment:
+          type: string
+    UpdateServiceRequest:
+      type: object
+      properties:
+        Comments:
           type: string
 security:
   - apiKeyHeader: []
