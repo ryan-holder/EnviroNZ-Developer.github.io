@@ -1,0 +1,53 @@
+openapi: 3.0.1
+info:
+  title: EnviroNZ-API
+  description: EnviroNZ API for Western Bay of Plenty
+  version: "1.0"
+servers:
+  - url: https://environz-api-dev.azurewebsites.net/api
+paths:
+  /Status:
+    get:
+      summary: Status
+      operationId: get-status
+      tags:
+        - Status
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+  /tcc/nextservicedate:
+    get:
+      summary: Returns the list of service dates for all services for an address. if end date is blank, it will only return one record
+      operationId: get-allservicerequests
+      tags:
+        - Next Service Date
+      parameters:
+        - name: address
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Success"
+        "401":
+          description: "Unauthorised"
+        "404":
+          description: "Not Found"
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: x-functions-key
+      in: header
+security:
+  - apiKeyHeader: []
