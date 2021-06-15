@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89b18963.chunk.css",
+    "main.js": "/static/js/main.bce63520.chunk.js",
+    "main.js.map": "/static/js/main.bce63520.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3a4e85b7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3a4e85b7.js.map",
+    "static/js/2.e569b145.chunk.js": "/static/js/2.e569b145.chunk.js",
+    "static/js/2.e569b145.chunk.js.map": "/static/js/2.e569b145.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.89b18963.chunk.css.map": "/static/css/main.89b18963.chunk.css.map",
+    "static/js/2.e569b145.chunk.js.LICENSE.txt": "/static/js/2.e569b145.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/wdc-background-min.09ba74b0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a4e85b7.js",
+    "static/js/2.e569b145.chunk.js",
+    "static/css/main.89b18963.chunk.css",
+    "static/js/main.bce63520.chunk.js"
+  ]
+}
