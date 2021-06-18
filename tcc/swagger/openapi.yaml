@@ -5,6 +5,7 @@ info:
   version: "1.0"
 servers:
   - url: https://environz-api-dev.azurewebsites.net/api
+  - url: http://localhost:7071/api
 paths:
   /Status:
     get:
@@ -28,7 +29,12 @@ paths:
       parameters:
         - name: address
           in: query
-          required: true
+          required: false
+          schema:
+            type: string
+        - name: assessment
+          in: query
+          required: false
           schema:
             type: string
         - name: endDate
